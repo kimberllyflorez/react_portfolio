@@ -8,14 +8,14 @@ import HeaderImage from "../assets/img/cat6.png";
 
 
 import TrackVisibility from "react-on-screen";
-import { TypeH1 } from "react-bootstrap-icons";
+
 
 function AppBanner() {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
-  const [index, setIndex] = useState(1);
+  const [ setIndex] = useState(1);
   const toRotate = ["Developer", "Base on Australia",];
   const period = 4000;
 
