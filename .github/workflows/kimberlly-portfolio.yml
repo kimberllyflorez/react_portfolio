@@ -33,7 +33,7 @@ jobs:
       - name: install dependecies 
         run: npm install
 
-      - name: install dependecies 
+      - name: start
         run: npm start
 
       
