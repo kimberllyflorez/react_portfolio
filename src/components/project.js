@@ -1,10 +1,13 @@
+
 import { Col, Container } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Cat1 from "../assets/img/cat_2.png";
 import Cat2 from "../assets/img/cat4.png";
 import Cat3 from "../assets/img/fat-cat.png";
+
 function Projects() {
+
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -37,7 +40,7 @@ function Projects() {
                 <h5>SQL</h5>
               </div>
               <div className="item" style={{ width: 500, height: 500, objectFit: 'cover' }}>
-                <img src={Cat2} alt="Image" />
+                <img src={Cat2}  alt="Image"/>
                 <h5>Flutter</h5>
               </div>
               <div className="item" style={{ width: 500, height: 500, objectFit: 'cover' }}>
