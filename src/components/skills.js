@@ -2,7 +2,7 @@ import { Container, Nav, Row, Tab, Col } from "react-bootstrap";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import BannerCat from "../assets/img/fat-cat.png";
 import SkillCard from "./skillCard";
-import { Justify } from "react-bootstrap-icons";
+
 
 function Skills() {
 
