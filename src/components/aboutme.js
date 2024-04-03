@@ -9,9 +9,13 @@ const AboutMe = () => {
     return (
         <section className="about_me" id="AboutMe">
             <h2 className="about_title">{COMMON.ABOUT_ME_TITLE}</h2>
+            <ul className="about_me_top_section">
             <h2>{COMMON.ABOUT_ME_DESCRIPTION}</h2>
+            <img className="about_me_image" src={me} alt="me"></img>
+            </ul>
+            
             <div >
-                <img className="about_me_image" src={me} alt="me"></img>
+              
 
                 <ul className="about_items">
                     <Row className="about_item">

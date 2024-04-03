@@ -41,7 +41,7 @@ function Skills() {
                                 <img alt="BannerCat" src={BannerCat} />
                                 <h2> Skills</h2>
                             </Row>
-                            <p>something to introduct something</p>
+                            <p>This section is a little be of what i know</p>
 
                             <Tab.Container id="skill-tabs" defaultActiveKey="tech">
                                 <Nav variant="pills" className="nav-pills mb-5 justify-center" id="">

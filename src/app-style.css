@@ -335,6 +335,81 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   animation: updown 3s linear infinite;
 }
 
+.about_me_top_section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+@media screen and (max-width: 830px) {
+  .banner {
+    margin-top: 0;
+    padding: 20px;
+
+  }
+
+  .banner img {
+    width: 50%;
+    margin-top: 10px;
+
+  }
+.banner p{
+  font-size: 16px;
+  line-height:2;
+}
+  .skill-card span,
+  p {
+    border-radius: 12px;
+    font-size: 12px;
+  }
+
+  .skill-card {
+    margin: 4px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 12px;
+    border-radius: 8px;
+  }
+
+  .skill-card button {
+    font-weight: 300;
+    border-radius: 8px;
+    padding: 4px;
+
+  }
+
+  .skill img {
+    width: 70%;
+  }
+
+  .skill p,
+  h1 {
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+    font-size: 14px;
+    line-height: 1;
+  }
+
+  .about_me_top_section {
+    flex-direction: column;
+    padding: 0 8px 8px 8px;
+  }
+
+  .about_me_top_section img {
+    padding-top: 16px;
+  
+    border-radius: 16cap;
+    object-fit: cover;
+  }
+
+  .about_me_top_section h2 {
+    margin: 4px;
+    font-size: 14px;
+    line-height:2;
+  }
+}
+
 @keyframes updown {
   0% {
     transform: translateY(-20px);
@@ -901,7 +976,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
   background-size: 100% 100%;
 }
-.about_item p{
+
+.about_item p {
   padding: 6px;
 }
 
@@ -927,8 +1003,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   }
 
   .about_item img {
-    display: none;
+    display: 50%;
   }
+
+
 
   .about_items {
     margin-top: 29px;
