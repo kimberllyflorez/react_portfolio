@@ -1,19 +1,19 @@
 /* eslint-disable no-unused-vars */
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
-import HeaderImage from "../assets/img/cat6.png";
+import HeaderImage from "../assets/img/cat6.webp";
 import TrackVisibility from "react-on-screen";
 
-
+import {COMMON} from "../i18n/constants"
 function AppBanner() {
-
+ 
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = ["Developer", "Base on Australia",];
+  const toRotate = ["Developer", COMMON.welcome];
   const period = 4000;
   const homeDescription= "Software Developer skilled in crafting mobile applications, effective problem solver, committed to clean coding, design patterns, and seamless user experiences.";
 
@@ -62,7 +62,7 @@ function AppBanner() {
                   <h1>{` I'm Kimberlly!`}               </h1>
                   <h1>   <span className="txt-rotate" dataPeriod="1500">
                     <span className="wrap">{text}</span></span></h1>
-                  <p>{homeDescription}</p>
+                  <p>{COMMON.MY_DESCRIPTION}</p>
                   <button onClick={() => console.log('connect')}>Let’s Connect</button>
                 </div>}
             </TrackVisibility>

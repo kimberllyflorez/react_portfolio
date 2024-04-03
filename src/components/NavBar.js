@@ -9,7 +9,12 @@ import HeaderImage from "../assets/img/header-img.svg";
 function AppNavBar() {
   const [activeLink, setActiveLink] = useState('home');
   const [scrolled, asScrolled] = useState(false);
-
+  const handleEmailButtonClick = () => {
+    window.open(
+      "https://mail.google.com/mail/?view=cm&fs=1&to=kimberlly.florez@gmail.com&su=Want to talk with you&body=Hi Kimberlly&",
+      "_blank"
+    );
+  };
   useEffect(() => {
     const onScroll = () => {
       if (window.scrollY > 50) {
@@ -49,17 +54,17 @@ function AppNavBar() {
             <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'}
               onClick={() => onUpdateActiveLink('projects')}
             >Projects</Nav.Link>
-                <Nav.Link href="#AboutMe" className={activeLink === 'AboutMe' ? 'active navbar-link' : 'navbar-link'}
-              onClick={() => onUpdateActiveLink('AboutMe')}
-            >About Me</Nav.Link>
+            <Nav.Link  to="/about-me" className="navbar-link">
+              About Me
+            </Nav.Link>
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="#home"><img src={navIcon1} alt="" /> </a>
-              <a href="#skill"><img src={navIcon2} alt="" /> </a>
-              <a href="#projects"><img src={navIcon3} alt="" /> </a>
+              <a href= "https://www.linkedin.com/in/kimberlly-cathalina-florez-sanchez-3ab8041b8/" ><img src={navIcon1} alt="" /> </a>
+              <a href="https://github.com/kimberllyflorez/Kimberlly-Florez"><img src={navIcon2} alt="" /> </a>
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=kimberlly.florez@gmail.com&su=Want to talk with you&body=Hi Kimberlly&"><img src={navIcon3} alt="email" /> </a>
             </div>
-            <button className="vvd" onClick={() => console.log("conect")}>
+            <button className="vvd" onClick={handleEmailButtonClick}>
               <span>Let's connect</span>
             </button>
           </span>

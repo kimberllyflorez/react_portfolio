@@ -1,6 +1,6 @@
 import { Container, Nav, Row, Tab, Col } from "react-bootstrap";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
-import BannerCat from "../assets/img/fat-cat.png";
+import BannerCat from "../assets/img/fat-cat.webp";
 import SkillCard from "./skillCard";
 
 
